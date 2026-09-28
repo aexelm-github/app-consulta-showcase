@@ -3,7 +3,7 @@
 > Plataforma web para **analizar encuestas y estudios poblacionales georreferenciados**: el investigador arrastra preguntas y respuestas para armar consultas, y obtiene resultados agrupados en gráficos 2D/3D, en un mapa con GPS y en documentos Word, sin escribir SQL.
 
 > [!IMPORTANT]
-> **Este repositorio es solo de exhibición.** Contiene la descripción del proyecto, capturas de pantalla y una selección mínima de fragmentos de código. **No es funcional ni reproducible**: faltan módulos, configuración, esquemas de base de datos y datos a propósito. El código fuente completo es privado.
+> **Este repositorio es solo de exhibición.** Contiene la descripción del proyecto y una selección mínima de fragmentos de código. **No es funcional ni reproducible**: faltan módulos, configuración, esquemas de base de datos y datos a propósito. El código fuente completo es privado.
 
 ---
 
@@ -14,10 +14,9 @@
 3. [Funcionalidades](#funcionalidades)
 4. [Stack tecnológico](#stack-tecnológico)
 5. [Arquitectura](#arquitectura)
-6. [Capturas](#capturas)
-7. [Aspectos técnicos destacados](#aspectos-técnicos-destacados)
-8. [Estructura y muestras de código](#estructura-del-proyecto-y-muestras-de-código)
-9. [Autor y licencia](#autor-y-licencia)
+6. [Aspectos técnicos destacados](#aspectos-técnicos-destacados)
+7. [Estructura y muestras de código](#estructura-del-proyecto-y-muestras-de-código)
+8. [Autor y licencia](#autor-y-licencia)
 
 ---
 
@@ -85,10 +84,6 @@ flowchart LR
 - **Router genérico:** la API expone pocos *endpoints* (`/bases`, `/read`, `/update`, `/remove`, `/upload`) y el nombre de la operación viaja como parámetro; cada uno delega en un modelo.
 - **Consulta declarativa:** la interfaz envía una definición (variables, filtros, agrupaciones, métricas) y el servidor la traduce a SQL sobre la base del estudio elegido.
 - **Permisos en dos niveles:** un *middleware* valida el perfil del usuario contra la acción y el recurso, y las pantallas consultan la jerarquía de objetos para mostrar u ocultar opciones.
-
-## Capturas
-
-<!-- CAPTURAS -->
 
 ## Aspectos técnicos destacados
 
