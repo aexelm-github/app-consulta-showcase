@@ -45,7 +45,7 @@ Una firma de investigación social recoge en campo miles de encuestas con dispos
 | **Constructor de consultas** | Arrastrar y soltar preguntas/respuestas; agrupar, filtrar por valores o rangos, sumar y promediar; porcentaje calculado sobre el total. |
 | **Workareas guardadas** | Cada análisis se guarda por usuario y estudio, y se recarga con su resultado. |
 | **Gráficos 2D y 3D** | Dona, torta y barras (Chart.js) y versiones 3D (Three.js), con agrupación automática de categorías pequeñas y paletas de color personalizables. |
-| **Mapa georreferenciado** | Cada encuesta se ubica por GPS y se colorea según el grupo de la consulta (Leaflet). |
+| **Mapa georreferenciado** | Cada encuesta se ubica por GPS y se colorea según el grupo de la consulta (Google Maps), con modo claro y oscuro. |
 | **Exportación** | Informe en Word con los gráficos incluidos y tablas de datos. |
 | **Ficha técnica** | Control de cuotas de la muestra con porcentaje de avance y alertas al llegar al límite. |
 | **Usuarios, perfiles y permisos** | Permisos por perfil sobre objetos (menús, pantallas, acciones y APIs), con jerarquía MENU → SCREEN → PERMISO. |
@@ -55,7 +55,7 @@ Una firma de investigación social recoge en campo miles de encuestas con dispos
 
 | Capa | Tecnologías |
 |---|---|
-| **Aplicación web** | Svelte 3, Vite, DataTables, Leaflet, Chart.js, Three.js, `docx`, `html2canvas`, `exceljs`, IndexedDB |
+| **Aplicación web** | Svelte 3, Vite, DataTables, Google Maps, Chart.js, Three.js, `docx`, `html2canvas`, `exceljs`, IndexedDB |
 | **API** | Node.js, Express, JWT, Multer y Sharp para imágenes |
 | **Datos** | MySQL (`mysql2`), una base maestra y una base por estudio |
 | **En evolución** | Reescritura en SvelteKit / Svelte 5 con Tailwind CSS 4 y DaisyUI |
